@@ -1,0 +1,41 @@
+body{
+    font-family: Arial;
+    text-align:center;
+    background:#0f172a;
+    color:white;
+}
+
+#gameBoard{
+    width:400px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card {
+    width: 110px;     
+    height: 110px;    
+    margin: 8px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;  
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.card.flipped {
+    background-color: #fff;
+    color: #333;
+}
+
+#winMessage{
+    margin-top:20px;
+    font-size:25px;
+    color:#22c55e;
+}
